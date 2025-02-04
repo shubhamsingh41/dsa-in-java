@@ -12,4 +12,3 @@ public class loop {
     }
     
 }
-shubham kumar singh
