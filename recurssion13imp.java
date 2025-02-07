@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class recurssion13imp {
     public static void seq(String s , int i ,String news) {
-        
+
         
     }
     public static void main(String[] args) {
@@ -13,4 +13,4 @@ public class recurssion13imp {
         String s = sc.nextLine();
 
     }
-}
+}//not completed yet
