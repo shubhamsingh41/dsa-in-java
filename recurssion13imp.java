@@ -5,12 +5,22 @@ import java.util.Scanner;
 
 public class recurssion13imp {
     public static void seq(String s , int i ,String news) {
+       if( i == s.length()){
+        System.out.println(news);
+        return;
+       }
+        char cur = s.charAt(i);
+        //to be
+        seq(s, i+1, news+cur);
+        //not to be
 
-        
+        seq(s, i+1, news);
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a string =");
+        String s = scan.nextLine();
+        seq(s, 0, "");
 
     }
-}//not completed yet
+}
