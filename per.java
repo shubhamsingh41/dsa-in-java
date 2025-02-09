@@ -13,7 +13,7 @@ public class per{
            String newstring = s.substring(0,i)+s.substring(i+1);
            permu(newstring, news+cur);
         }    
-
+//samajna hai pure recurssion ko ek baar aache se
         }
 
         public static void main(String[] args) {
