@@ -12,7 +12,10 @@ class sort{
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+       System.out.print("enter a length of a array: ");
+
         int ar= sc.nextInt();
+        System.out.println("enter a value of string: ");
         int arr[] = new int[ar];
         for (int i = 0; i < ar; i++) {
             arr[i] = sc.nextInt();
@@ -29,8 +32,9 @@ class sort{
 
                 }
             }
-            
-        } array(arr);
+            //System.out.println("the sorted array is");
+        } System.out.println("the sorted array is");
+        array(arr);
         
     }
 }
