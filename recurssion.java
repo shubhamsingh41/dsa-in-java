@@ -14,7 +14,7 @@ public class recurssion {
         recur(n);
     }*/
     public static void recur(int n) {
-        if(n==6){
+        if(n==11){
             return;
         }
         System.out.println(n);
