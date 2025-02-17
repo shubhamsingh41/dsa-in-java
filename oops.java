@@ -5,7 +5,10 @@ class pen{
     public void write(){
         System.out.println("writing something");
     }
+    public void printcolor(){
+        System.out.println(this.color);
 
+    }
 }
 //basic of oops in this code 
 
@@ -17,7 +20,12 @@ public class oops {
         pen1.type = "gel";
 
 
-        pen1.write();
+        pen pen2 = new pen();
+        pen2.color = "black";
+        pen2.type = "ballpen";
+
+        pen1.printcolor();
+        pen2.printcolor();
     }
     
 }
