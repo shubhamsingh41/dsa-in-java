@@ -1,3 +1,5 @@
+
+
 class pen{
     String color;
     String type; //ballpen , gel
@@ -11,7 +13,15 @@ class pen{
     }
 }
 //basic of oops in this code 
+class Student{
+    String name;
+    int age;
+    public void printinfo(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
 
+}
 
 public class oops {
     public static void main(String[] args) {
@@ -26,6 +36,14 @@ public class oops {
 
         pen1.printcolor();
         pen2.printcolor();
+
+        Student s1 = new Student();
+        s1.name = "aman";
+        s1.age = 18;
+
+        s1.printinfo();
+
+
     }
     
 }
