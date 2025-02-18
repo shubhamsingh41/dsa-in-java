@@ -50,6 +50,7 @@ public class oops {
         Student s2 = new Student(s1);
 
         s2.printinfo();
+        s1.printinfo();
 
 
     }
