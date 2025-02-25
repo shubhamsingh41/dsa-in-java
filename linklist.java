@@ -61,6 +61,32 @@ public class linklist {
      
      }
 
+     //delete first
+     public void deletefirst(){
+        if(head == null){
+            System.out.println("the list is empty");
+            return;
+        }
+          head = head.next;
+
+     }
+     //delete last
+     public void deletelast(){
+        if(head == null){
+            System.out.println("the list is empty");
+            return;
+        }
+        Node secondlast = head;
+        Node lastnode = head.next;
+        while (lastnode != null) {
+            lastnode = lastnode.next;
+            secondlast = secondlast.next;
+        
+            //not completed yaha se start krna hai
+            
+        }
+     }
+
     public static void main(String[] args) {
         linklist list = new linklist();
         list.addfirst("a");
