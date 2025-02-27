@@ -2,6 +2,13 @@
 
 public class linklist {
     Node head;
+    private int size;
+
+     linklist() {
+        this.size = 0;
+    }
+
+    
     class Node{
         String data;
         Node next;
@@ -9,6 +16,7 @@ public class linklist {
          Node(String data) {
             this.data = data;
             this.next = null;
+            size++;
         }
 
         
@@ -67,6 +75,7 @@ public class linklist {
             System.out.println("the list is empty");
             return;
         }
+        size--;
           head = head.next;
 
      }
@@ -75,16 +84,26 @@ public class linklist {
         if(head == null){
             System.out.println("the list is empty");
             return;
-        }
+        } 
+        size--; 
+       if(head.next == null){
+        head = null;
+        return;
+       }
+
         Node secondlast = head;
         Node lastnode = head.next;
-        while (lastnode != null) {
+        while (lastnode.next != null) {
             lastnode = lastnode.next;
             secondlast = secondlast.next;
         
             //not completed yaha se start krna hai
             
         }
+     }
+
+     public int getsize(){
+        return size;
      }
 
     public static void main(String[] args) {
@@ -96,5 +115,15 @@ public class linklist {
         list.printlist();
         list.addfirst("this");
         list.printlist();
+
+        list.deletefirst();
+        list.printlist();
+        list.deletelast();
+        list.printlist();
+
+       System.out.println( list.getsize());
+       list.addfirst("this");
+       list.printlist();
+       System.out.println(list.getsize());
     }
 }
