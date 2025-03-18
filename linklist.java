@@ -127,3 +127,4 @@ public class linklist {
        System.out.println(list.getsize());
     }
 }
+//nahi ho raha hai ye run pata nahi kya dikaat hai
