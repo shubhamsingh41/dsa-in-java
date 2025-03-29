@@ -64,7 +64,7 @@ public class bst3 {
      return root;
     }
     public static void main(String[] args) {
-        int value[] = { 8,5,3,1,4,6,10,11,14,};
+        int value[] = { 8,5,3,1,4,6,10,11,14};
         node root = null;
 for (int i = 0; i < value.length; i++) {
 
