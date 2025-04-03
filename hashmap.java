@@ -47,7 +47,7 @@ public class hashmap {
            System.out.println(e.getValue());
          }
          //second tarika
-         Set<String> keys = map.keySet();
+         Set<String> keys = map.keySet(); 
          for(String key : keys){
             System.out.println(key + " " + map.get(key));
          }  
