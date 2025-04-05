@@ -87,7 +87,7 @@ public class graphque6 {
             
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) {  
         int v = 7;
        
         ArrayList<edge> graph[] = new ArrayList[v];
