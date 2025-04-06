@@ -50,6 +50,21 @@ public class graph2part {
 
         ArrayList<edge> graph[] = new ArrayList[v];
         createg(graph);
+
+        /* 
+          boolean vis[] = new boolean[v];
+          boolean rec[] = new boolean[v];
+          for (int i = 0; i < v; i++) {
+            if(!vis[i]){
+                boolean iscycle = iscycledirected(graph, vis, i, rec);
+                if(iscycle){
+                    System.out.println(iscycle);
+                    break;
+                }
+            }
+              ye jitna code comment hai ye tab likhna hai jab graph tuta hua hai
+          }*/
+        
         System.out.println(iscycledirected(graph, new boolean[v], 0, new boolean[v]));
     }
 }
