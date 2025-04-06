@@ -67,6 +67,7 @@ public static void main(String[] args) {
     bellmanford(graph, 0, V);
  
     }
+//bellman ford algorithm doen't work for negative weight cycles
 
 }
 
