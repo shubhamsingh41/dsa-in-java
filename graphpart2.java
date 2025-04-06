@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class graph2part {
+public class graphpart2 {
     static class edge{
         int src;
         int dest;
